@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .registration-container {
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #ff69b4;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 350px;
+      }
+      .registration-container h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .registration-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .registration-container input[type="submit"] {
+        background-color: #ff69b4;
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+      }
+      .registration-container input[type="submit"]:hover {
+        background-color: #ff1493;
+      }
+      .registration-container p {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .registration-container a {
+        color: #ff69b4;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="registration-container">
+      <h2>Register</h2>
+      <form action="/register" method="post">
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="text" placeholder="Lastname" name="lastname" required />
+        <input type="text" placeholder="Address" name="address" required />
+        <input
+          type="tel"
+          placeholder="Mobile Number"
+          name="mobileno"
+          required
+        />
+        <input type="submit" value="Register" />
+      </form>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </body>
+</html>
